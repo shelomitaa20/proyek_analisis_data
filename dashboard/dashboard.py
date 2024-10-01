@@ -4,7 +4,7 @@ import seaborn as sns
 import streamlit as st
 
 # Load dataset and convert to datetime
-all_df = pd.read_csv("all_df.csv")
+all_df = pd.read_csv("dashboard/all_df.csv")
 all_df["order_purchase_timestamp"] = pd.to_datetime(all_df["order_purchase_timestamp"])
 st.title("E-Commerce Dashboard")
 
